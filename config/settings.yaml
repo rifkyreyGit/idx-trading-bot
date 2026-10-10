@@ -32,3 +32,7 @@ evaluation:
 portfolio:
   max_positions: 3
   max_position_pct: 0.7
+
+ml:
+  horizon_days: 5
+  round_trip_cost: 0.006
