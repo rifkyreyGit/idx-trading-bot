@@ -2,3 +2,9 @@ data:
   tickers: [BBCA, BBRI, BMRI, TLKM]
   start_date: "2018-01-01"
   database_path: "data/idx.db"
+
+indicators:
+  ma_fast: 20
+  ma_slow: 50
+  rsi_period: 14
+  volume_window: 20
