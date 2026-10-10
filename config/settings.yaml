@@ -28,3 +28,7 @@ backtest:
 evaluation:
   split_date: "2023-01-01"
   timeframes: [daily, weekly]
+
+portfolio:
+  max_positions: 3
+  max_position_pct: 0.7
