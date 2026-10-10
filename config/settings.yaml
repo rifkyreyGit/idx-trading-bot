@@ -27,3 +27,4 @@ backtest:
 
 evaluation:
   split_date: "2023-01-01"
+  timeframes: [daily, weekly]

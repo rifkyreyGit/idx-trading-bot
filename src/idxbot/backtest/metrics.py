@@ -58,3 +58,11 @@ def compute_metrics(result, initial_capital: float) -> dict:
     }
     out.update(trade_stats(result.trades))
     return out
+
+
+def exposure_pct(result) -> float:
+    """Persentase hari/minggu ketika strategi memegang saham."""
+    eq = result.equity
+    if eq.empty:
+        return 0.0
+    return float((eq["shares"] > 0).mean() * 100)

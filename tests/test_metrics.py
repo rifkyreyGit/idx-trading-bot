@@ -43,3 +43,15 @@ def test_compute_metrics_return():
     m = compute_metrics(hasil, 1_000_000)
     assert m["return_pct"] == pytest.approx(10.0)
     assert m["max_drawdown_pct"] == 0
+
+
+def test_exposure_pct():
+    from idxbot.backtest.metrics import exposure_pct
+
+    idx = pd.bdate_range("2024-01-01", periods=4)
+    equity = pd.DataFrame(
+        {"equity": [100.0] * 4, "cash": [100.0] * 4, "shares": [0, 0, 100, 100]},
+        index=idx,
+    )
+    hasil = BacktestResult(trades=pd.DataFrame(), equity=equity, open_position=None)
+    assert exposure_pct(hasil) == 50.0
