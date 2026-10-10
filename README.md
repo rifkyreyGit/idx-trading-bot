@@ -18,7 +18,7 @@ Bot analisis dan paper trading untuk saham Bursa Efek Indonesia (BBCA, BBRI, BMR
 ## Cara pakai (macOS)
 
 ```bash
-git clone https://github.com/USERNAME/idx-trading-bot.git
+git clone https://github.com/rifkyreyGit/idx-trading-bot.git
 cd idx-trading-bot
 python3.11 -m venv .venv
 source .venv/bin/activate
