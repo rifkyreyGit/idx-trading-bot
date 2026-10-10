@@ -8,3 +8,19 @@ indicators:
   ma_slow: 50
   rsi_period: 14
   volume_window: 20
+
+strategy:
+  buy_min_confirmations: 2
+  sell_min_confirmations: 1
+  rsi_buy_min: 45
+  rsi_buy_max: 70
+  rsi_sell_below: 45
+  volume_ratio_min: 1.0
+
+backtest:
+  initial_capital: 1000000
+  fee_buy: 0.0015
+  fee_sell: 0.0025
+  slippage: 0.001
+  lot_size: 100
+  max_position_pct: 1.0
