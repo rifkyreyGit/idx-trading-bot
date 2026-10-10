@@ -24,3 +24,6 @@ backtest:
   slippage: 0.001
   lot_size: 100
   max_position_pct: 1.0
+
+evaluation:
+  split_date: "2023-01-01"
