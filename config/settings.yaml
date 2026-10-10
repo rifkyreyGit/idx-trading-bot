@@ -1,0 +1,4 @@
+data:
+  tickers: [BBCA, BBRI, BMRI, TLKM]
+  start_date: "2018-01-01"
+  database_path: "data/idx.db"
